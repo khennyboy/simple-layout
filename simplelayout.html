@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Layout 1</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="The use of CSS Padding and Margin" />
+    <meta name="author" content="Sheriff baba" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+
+    <style type="text/css">
+      @import url("fontawesome/css/all.min.css");
+      @import url("fontawesome/webfonts/fa-regular-400.woff2");
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box; /* to remove the effect of padding and magging in calculating width  */
+        font-family: Arial;
+      }
+      #logo-div {
+        width: 100%;
+        min-height: 50px;
+        background-color: lightgray;
+        padding-left: 2%;
+        line-height: 50px;
+        margin-bottom: 10px;
+      }
+      #nav-div {
+        width: 100%;
+        min-height: 30px;
+        background-color: lightgray;
+        text-align: center;
+        line-height: 30px;
+        margin-bottom: 10px;
+      }
+      #header-banner {
+        width: 100%;
+        min-height: 100px;
+        background-color: lightgray;
+        text-align: center;
+        line-height: 100px;
+        margin-bottom: 10px;
+      }
+      #main-div {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      #side-bar-div {
+        width: 20%;
+        background-color: lightgray;
+        min-height: 400px;
+        float: left;
+        text-align: center;
+        line-height: 400px;
+      }
+      #bodyarea-div {
+        width: 75%;
+        min-height: 400px;
+        background-color: lightgray;
+        float: right;
+        text-align: center;
+        line-height: 400px;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      #footer {
+        min-height: 100px;
+        width: 100%;
+        background-color: lightgray;
+        text-align: center;
+        line-height: 100px;
+      }
+      #border {
+        width: 80%;
+        background-color: orange;
+        margin: auto;
+      }
+      .element::after {
+        content: "Teacher";
+      }
+      .element::before {
+        content: "\f015";
+      }
+    </style>
+  </head>
+  <body>
+    <div id="border">
+      <div id="logo-div"><i class="fa fa-home"></i> Logo</div>
+      <div id="nav-div">Navigation</div>
+      <div id="header-banner">Header/Banner</div>
+      <div id="main-div" class="clearfix">
+        <div id="side-bar-div">Side Bar</div>
+        <div id="bodyarea-div">Body Area</div>
+      </div>
+      <div id="footer"><span class="element">Hi </span> Footer</div>
+    </div>
+  </body>
+</html>
